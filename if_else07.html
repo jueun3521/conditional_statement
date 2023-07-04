@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리연산자</title>
+</head>
+<body>
+    <script>
+        var number1 = prompt("50미만의 숫자를 입력해주세요.")
+        var number2 = prompt("50미만의 숫자를 입력해주세요.") 
+
+        // !==:피연산자가 서로 같지 않으면 true 
+        // null:값이 유효하지 않을 때의 상태 
+        // ||: 피연산자 중 하나만 ture
+        // &&:  피연산자가 모두 true일 경우만 true
+
+        if (number1 !== null && number2 !== null){
+            if (number1 < 10 || number2 < 10 ){
+            alert ("두 개의 숫자 중 최소한 하나는 10 미만입니다.")
+        } else{
+            alert("두 개의 숫자 중 10 미만의 수는 없습니다.")
+        }
+        } else{
+            alert("50 미만의 숫자를 입력해주세요!")
+        }
+
+    </script>
+</body>
+</html>

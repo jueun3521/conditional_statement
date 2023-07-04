@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홀수짝수</title>
+</head>
+<body>
+  <p id="result"></p>
+
+  <script>
+    let num = prompt("숫자를 입력해주세요");
+
+    // if (num !== null && num !== ``) {
+    //   if(num % 2 === 0) {
+    //     alert("짝수입니다.");
+    //   }
+    //   else {
+    //     alert("홀수입니다.");
+    //   }
+    // }
+    // else {
+    //   alert("숫자를 입력해주세요");
+    // }
+
+    (num !== null && num !== ``) ? ((num % 2 === 0) ? alert("짝수입니다.") : alert("홀수입니다.")) : alert("숫자를 입력해주세요");
+  </script>
+</body>
+</html>

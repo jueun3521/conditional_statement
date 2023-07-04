@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>물건 가격 비교</title>
+</head>
+<body>
+  <h1>물건 가격 비교</h1>
+  <label for="price01">가격 1: </label>
+  <input type="number" id="price01" min="1">
+  <label for="price02">가격 2: </label>
+  <input type="number" id="price02" min=1>
+  <button onclick="check()">비교</button>
+  <p id="result"></p>
+
+  <script>
+    function check() {
+      let price01 = document.getElementById("price01").value;
+      let price02 = document.getElementById("price02").value;
+      let result = document.getElementById("result");
+
+      if (price01 !== `` && price02 !== ``) {
+        if (price01 > price02) {
+          result.textContent = `가격 2가 더 저렴합니다.`;
+        }
+        else if (price01 < price02) {
+          result.textContent = `가격 1이 더 저렴합니다.`;
+        }
+        else {
+          result.textContent = `두 물건의 값이 같습니다.`;
+        }
+      }
+      else {
+        if(price01 === ``) {
+          result.textContent = `가격 1 값을 입력해주세요`;
+        }
+        else {
+          result.textContent = `가격 2 값을 입력해주세요`;
+        }
+      }
+    }
+  </script>
+  <p></p>
+</body>
+</html>
